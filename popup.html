@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        width: 220px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .switch {
+        display: inline-block;
+        position: relative;
+      }
+
+      .switch .switch__input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 48px;
+        height: 80px;
+        opacity: 0;
+        z-index: 0;
+      }
+
+      .switch .switch__label {
+        display: block;
+        padding-left: 64px;
+        font-size: 18px;
+      }
+      .switch .switch__label:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 48px;
+        height: 16px;
+        background: rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+        z-index: 10;
+        transition: all 75ms ease-in;
+        top: 4.32px;
+      }
+      .switch .switch__label:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 24px;
+        height: 24px;
+        background: rgba(255, 255, 255, 1);
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
+          0 1px 2px 0 rgba(0, 0, 0, 0.06);
+        border-radius: 50%;
+        z-index: 20;
+        transition: all 75ms ease-in;
+        top: 0.16px;
+      }
+
+      .switch.switch--checked .switch__label:before {
+        background: rgb(168, 115, 175);
+      }
+      .switch.switch--checked .switch__label:after {
+        background: rgb(67, 25, 73);
+        left: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="switch">
+      <input type="checkbox" class="switch__input" />
+      <label class="switch__label">Activar Platzi Tux</label>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

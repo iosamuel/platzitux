@@ -1,0 +1,57 @@
+.LiveBaseLayout {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+.LiveContentWrapper {
+  width: calc(100% - 384px) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  background: black !important;
+}
+
+.LiveDetails {
+  opacity: 0 !important;
+  position: fixed !important;
+  bottom: 0 !important;
+  right: 384px !important;
+  left: 0 !important;
+  transition: opacity 75ms ease-in !important;
+}
+
+.LiveDetails:hover {
+  opacity: 1 !important;
+}
+
+.LiveChatWrapper {
+  height: calc(100vh - 52px) !important;
+  width: 384px !important;
+  right: 0px !important;
+  background: black !important;
+}
+
+.BestStudents-title {
+  color: white !important;
+}
+
+.SmartTabs,
+.SmartTabs-tabs,
+.SmartTabs-content-head,
+.SmartTabs-content,
+.ChatFeed,
+.ChatForm,
+.Message {
+  background: black !important;
+}
+
+.Message-content-author {
+  color: white !important;
+}
+.Message-content-message {
+  color: #a0a0a0 !important;
+}
+
+.Message-content-author {
+  color: #f5f5f5 !important;
+}

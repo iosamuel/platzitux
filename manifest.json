@@ -1,0 +1,20 @@
+{
+  "name": "Platzi Tux",
+  "version": "1.0",
+  "description": "Extension para mejorar la experiencia de lives en Platzi",
+  "manifest_version": 2,
+  "permissions": [
+    "activeTab",
+    "webNavigation",
+    "declarativeContent",
+    "storage"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "page_action": {
+    "default_popup": "popup.html"
+  },
+  "author": "Samuel Burbano - @iosamuel"
+}
